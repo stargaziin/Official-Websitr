@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prescription Eyeglasses Store</title>
+    <title>Stargaziin Eyecare</title>
     <link rel="stylesheet" href="C:\Users\WDAGUtilityAccount\Desktop\Official Website\style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Prescription Eyeglasses Store</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
+            <div class="logo">
+                <img src="logo.png" alt="Stargaziin Eyecare Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Our Product</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Help me choose</a></li>
+                <li><a href="#contact">Blogs</a></li>
             </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Find an eyecare professional">
+                <button type="submit">Search</button>
+            </div>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Find Your Perfect Pair of Glasses</h2>
-        <p>We offer a wide range of prescription eyeglasses to suit your style and needs.</p>
-    </section>
-
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <h3>Classic Frames</h3>
-            <p>Timeless designs that never go out of style.</p>
-        </div>
-        <div class="product">
-            <h3>Modern Frames</h3>
-            <p>Trendy and fashionable frames for the modern look.</p>
-        </div>
-        <div class="product">
-            <h3>Sports Frames</h3>
-            <p>Durable and comfortable frames for active lifestyles.</p>
+    <section id="home" class="hero-section" style="background-image: url('asset/Another background.jpeg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Welcome to Stargaziin</h1>
+            <p>Your vision, our priority.</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>About Us</h2>
-        <p>We are dedicated to providing high-quality prescription eyeglasses at affordable prices.</p>
+        <p>At Visionary Eyecare, we are dedicated to providing the highest quality eye care services. Our team of experienced professionals is here to help you achieve and maintain clear vision.</p>
     </section>
 
-    <section id="contact">
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Comprehensive Eye Exams</h3>
+            <p>We offer thorough eye exams to ensure your vision is at its best.</p>
+        </div>
+        <div class="service">
+            <h3>Contact Lens Fitting</h3>
+            <p>Get the perfect fit for your contact lenses with our expert fitting services.</p>
+        </div>
+        <div class="service">
+            <h3>Prescription Glasses</h3>
+            <p>Choose from a wide range of stylish and functional prescription glasses.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>Email: info@eyeglassesstore.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Have questions or need to schedule an appointment? Get in touch with us today!</p>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2023 Prescription Eyeglasses Store. All rights reserved.</p>
+        <p>&copy; 2023 Visionary Eyecare. All rights reserved.</p>
     </footer>
 </body>
 </html>
